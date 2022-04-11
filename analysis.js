@@ -115,12 +115,18 @@ function complexity(filePath)
 	// Tranverse program with a function visitor.
 	traverseWithParents(ast, function (node) 
 	{
+		if(node.type == "Literal")
+			fileBuilder.Strings++;
 		if (node.type === 'FunctionDeclaration') 
 		{
 			var builder = new FunctionBuilder();
 
 			builder.FunctionName = functionName(node);
 			builder.StartLine    = node.loc.start.line;
+			builder.ParameterCount = node.params.length;
+			traverseWithParents(node, function(){
+
+			});
 
 			builders[builder.FunctionName] = builder;
 		}
