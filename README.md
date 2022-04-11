@@ -49,9 +49,9 @@ The repository contains a stub that parses a javascript file and visits each fun
 
 2. Do a simple calculation (2 Points Each) 
 
-   a) **ParameterCount**: The number of parameters for functions (FunctionBuilder) -----> 31
+   a) **ParameterCount**: The number of parameters for functions (FunctionBuilder)
    
-   b) **String Usage**: How many string literals are used in file? (FileBuilder) -------> 63
+   b) **String Usage**: How many string literals are used in file? (FileBuilder)
 
 3. Using multiple visitors (2 Points Each) 
 
